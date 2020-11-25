@@ -1,0 +1,25 @@
+﻿<Page x:Class="AxiusCrmWpf.ClientPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AxiusCrmWpf"
+      mc:Ignorable="d" 
+      d:DesignHeight="569" d:DesignWidth="858"
+      Title="ClientPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="11*"/>
+
+        </Grid.ColumnDefinitions>
+        <StackPanel >
+            <Label HorizontalAlignment="Center" Foreground="White" FontSize="20" FontWeight="Bold">Клиенты</Label>
+            <ListBox Margin="10" Background="#FF2E2B3F" Height="420" Style="{DynamicResource ListBoxRounded}"/>
+            <Button x:Name="btnAddClient" Margin="10,0,10,0" MinHeight="35" Background="#6351BD" Foreground="White" FontSize="20" BorderThickness="0" Style="{DynamicResource btnAddClientStyle}" > Добавить клиента </Button>
+            <Button x:Name="btnDeleteClient" Margin="10,15,10,0" MinHeight="25" Background="#C21935" Foreground="White" FontSize="20" BorderThickness="0" Style="{DynamicResource btnDeleteClient}">Удалить клиента</Button>
+        </StackPanel>
+        
+    </Grid>
+</Page>

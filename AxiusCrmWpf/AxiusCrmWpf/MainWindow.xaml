@@ -1,0 +1,35 @@
+﻿<Window x:Class="AxiusCrmWpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AxiusCrmWpf"
+        mc:Ignorable="d"
+        Title="AxiusCRM" Height="600" Width="1100" UseLayoutRounding="False" ResizeMode="NoResize">
+    <Grid Background="#FF221F2E">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="3*"/>
+            <ColumnDefinition Width="11*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel Orientation="Vertical" Grid.Column="0" Background="#FF2E2B3F">
+            <Rectangle MinHeight="100" MaxHeight="100">
+                <Rectangle.Fill>
+                    <ImageBrush ImageSource="axius3.png"/>
+                </Rectangle.Fill>
+            </Rectangle>
+            
+            
+            <StackPanel>
+                <Button x:Name="btnClient" Content="Клиенты" MinHeight="50" FontSize="25"  Foreground="White" BorderThickness="0" Background="{x:Null}" FontWeight="Bold" Style="{DynamicResource BtnMenuStyle}" Click="btnClient_Click" />
+                <Button x:Name="btnRecord" Content="Запись" MinHeight="50" FontSize="25"  Foreground="White" BorderThickness="0" Background="{x:Null}" FontWeight="Bold" Style="{DynamicResource BtnMenuStyle}"/>
+                <Button x:Name="btnTasks" Content="Задачи" MinHeight="50" FontSize="25"  Foreground="White" BorderThickness="0" Background="{x:Null}" FontWeight="Bold" Style="{DynamicResource BtnMenuStyle}"/>
+                <Button x:Name="btnDocumetns" Content="Документы" MinHeight="50" FontSize="25"  Foreground="White" BorderThickness="0" Background="{x:Null}" FontWeight="Bold" Style="{DynamicResource BtnMenuStyle}"/>
+                <Button x:Name="btnFinance" Content="Финансы" MinHeight="50" FontSize="25"  Foreground="White" BorderThickness="0" Background="{x:Null}" FontWeight="Bold" Style="{DynamicResource BtnMenuStyle}"/>
+                <Button x:Name="btnMessages" Content="Рассылка" MinHeight="50" FontSize="25"  Foreground="White" BorderThickness="0" Background="{x:Null}" FontWeight="Bold" Style="{DynamicResource BtnMenuStyle}"/>
+            </StackPanel>
+            
+        </StackPanel>
+
+        <Frame x:Name="pageFrame" Grid.Column="1"/>
+    </Grid>
+</Window>
